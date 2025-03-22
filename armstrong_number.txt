@@ -1,0 +1,7 @@
+Take an integer as input.
+Count the number of digits in the number (n).
+Extract each digit from the number.
+Raise each digit to the power n and sum them.
+Compare the sum with the original number:
+	If they are equal, it is an Armstrong number.
+	Otherwise, it is not an Armstrong number.
