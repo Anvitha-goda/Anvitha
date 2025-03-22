@@ -1,0 +1,62 @@
+ 
+Algorithms:
+
+Decimal to Binary, Octal, Hexadecimal
+1.Divide the decimal number by the target base (2 for binary, 8 for octal, 16 for hexadecimal).
+2.Store the remainder .(convert 10-15 to A-F) for binary to hexa decimal
+3.Update the decimal number as the quotient.
+4.Repeat until the quotient becomes 0.
+5.The final result is the remainders read in reverse order.
+
+***********************************************************************************************************************************************
+
+Binary to Decimal, Octal, Hexadecimal
+
+Binary → Decimal
+Start from the rightmost bit (least significant bit, LSB).
+Multiply each bit by 
+2 power n(where n is its position from right, starting from 0 to no of digits-1).
+Sum up all results.
+
+Binary → Octal
+Group the binary digits into sets of three, starting from the right.
+Convert each group into its octal equivalent.
+
+Binary → Hexadecimal
+Group the binary digits into sets of four, starting from the right.
+Convert each group into its hexadecimal equivalent.
+
+***********************************************************************************************************************************************
+
+Octal to Binary, Decimal, Hexadecimal
+	
+Octal → Binary
+Convert each octal digit into its 3-bit binary equivalent.
+
+Octal → Decimal
+Multiply each octal digit by 8 power n (where n is its position from right, starting from 0 to no of digits-1).
+Sum up all results.
+
+Octal → Hexadecimal
+Convert the octal number to binary (each octal digit → 3-bit binary).
+Group into 4-bit sets.
+Convert each group to hexadecimal
+
+***********************************************************************************************************************************************
+
+Hexadecimal to Binary, Octal, Decimal
+
+Hexadecimal → Binary
+Convert each hex digit into its 4-bit binary equivalent.
+Concatenate all binary values.
+
+Hexadecimal → Decimal
+Start from the rightmost digit.
+Convert each hexadecimal digit to its decimal equivalent.
+Multiply each hex digit by 16 power n , where n is its position from right (starting at 0).
+Sum all the results.
+
+Hexadecimal → Octal
+Convert the hexadecimal number to binary (each hex digit → 4-bit binary).
+Convert the binary number to octal (group into 3-bit sets).
+Convert each group into octal.
